@@ -6,4 +6,4 @@
 
 **Shortcut**: Ctrl+T, Ctrl+C
 
-**Export**: ToggleCodeLens.vcmd
+[Export](ToggleCodeLens.vcmd)
