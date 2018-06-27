@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SerializableSnippets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <commands>
+    <Snippet>
+      <id>1</id>
+      <name>Toggle CodeLens</name>
+      <code>using EnvDTE;
+using EnvDTE80;
+using Microsoft.VisualStudio.Shell;
+using VisualCommanderExt;
+
+public class C : VisualCommanderExt.ICommand
+{
+	public void Run(EnvDTE80.DTE2 DTE, Microsoft.VisualStudio.Shell.Package package) 
+	{
+		DTE.ExecuteCommand("EditorContextMenus.CodeLens.CodeLensOptions");
+		System.Threading.Thread.Sleep(300);
+		System.Windows.Forms.SendKeys.Send("{TAB} {ENTER}");
+	}
+}
+</code>
+      <referencedAssemblies />
+      <type>Command</type>
+      <lang>CS</lang>
+      <langVersion>v4.0</langVersion>
+      <enabled>true</enabled>
+      <includeDebugInformation>false</includeDebugInformation>
+    </Snippet>
+  </commands>
+  <extensions />
+  <commonCode />
+</SerializableSnippets>
