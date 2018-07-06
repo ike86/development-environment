@@ -1,6 +1,6 @@
 # Visual Studio 2017
 
-## Setting with Custom Dark Theme
+## Settings with Custom Dark Theme
 
 ![Visual Studio Custom Dark Theme preview](./images/CustomDarkPreview.PNG)
 
@@ -9,3 +9,5 @@
 - custom colored XML comments to reduce noise
 - custom colored comments to _almost_ get rid of them
   - as the code should document itself
+
+## TODO Settings with Presentation Theme
