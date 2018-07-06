@@ -7,3 +7,5 @@
 **Shortcut**: Ctrl+T, Ctrl+C
 
 [Export](ToggleCodeLens.vcmd)
+
+## [Visual Studio Spell Checker](https://github.com/EWSoftware/VSSpellChecker)
