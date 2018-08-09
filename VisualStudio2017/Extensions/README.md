@@ -1,5 +1,7 @@
 # Visual Studio 2017 Extensions
 
+## [File Nesting](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.FileNesting)
+
 ## [Output enhancer](https://marketplace.visualstudio.com/items?itemName=NikolayBalakin.Outputenhancer)
 
 ## [Visual Commander](https://vlasovstudio.com/visual-commander/)
