@@ -39,3 +39,9 @@
 \version
 \vhdlflow
 async
+enum
+nameof
+namespace
+nuget
+readonly
+struct
