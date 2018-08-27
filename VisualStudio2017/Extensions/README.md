@@ -1,5 +1,7 @@
 # Visual Studio 2017 Extensions
 
+## [Add New File](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.AddNewFile)
+
 ## [File Nesting](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.FileNesting)
 
 ## [Output enhancer](https://marketplace.visualstudio.com/items?itemName=NikolayBalakin.Outputenhancer)
