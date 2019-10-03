@@ -6,6 +6,8 @@
 
 ## [CodeMaid](http://www.codemaid.net/)
 
+[User settings export](CodeMaid.config)
+
 ## [Enhanced Syntax Highlighting](https://github.com/Art-Stea1th/Enhanced-Syntax-Highlighting)
 
 ## [File Nesting](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.FileNesting)
