@@ -25,6 +25,10 @@ Disabled extensions:
 - Copy As Html
 - Double-Click Maximize
 
+### [Editor Guidelines](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)
+
+Note: This version is relevant for Visual Studio 2019
+
 ## [Roslynator](https://github.com/JosefPihrt/Roslynator)
 
 ## [Visual Commander](https://vlasovstudio.com/visual-commander/)
