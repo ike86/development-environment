@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-Menu, Tray, Icon, C:\Users\sonrisa nb88\Desktop\2hotstrings.ico
+Menu, Tray, Icon, 2hotstrings.ico
 ~Escape::Reload
 
 ::;shrug::¯\_(ツ)_/¯ 

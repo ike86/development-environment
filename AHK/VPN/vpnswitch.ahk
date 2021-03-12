@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-#Include C:\Users\sonrisa nb88\Desktop\TrayIcon.ahk
+#Include ..\TrayIcon.ahk
 
 ~Escape::Reload
 
@@ -47,7 +47,7 @@ return
 ; ----------------------------------------------------------------
 
 SwitchToSON() {
-    switchToSonrisa =  C:\Users\sonrisa nb88\Desktop\sonvpn.bat
+    switchToSonrisa = C:\git\gh\development-environment\AHK\VPN\sonvpn.bat
     CMD = %A_WinDir%\System32\cmd.exe 
      
     Run *RunAs "%CMD%" /c "%switchToSonrisa%"
@@ -55,11 +55,11 @@ SwitchToSON() {
 }
 
 SetTrayIconToSON() {
-    Menu, Tray, Icon, C:\Users\sonrisa nb88\Desktop\1SON.ico
+    Menu, Tray, Icon, 1SON.ico
 }
 
 SwitchToJUM() {
-    switchToJumio =  C:\Users\sonrisa nb88\Desktop\jumvpn.bat
+    switchToJumio = C:\git\gh\development-environment\AHK\VPN\jumvpn.bat
     CMD = %A_WinDir%\System32\cmd.exe 
      
     Run *RunAs "%CMD%" /c "%switchToJumio%"
@@ -67,5 +67,5 @@ SwitchToJUM() {
 }
 
 SetTrayIconToJUM() {
-    Menu, Tray, Icon, C:\Users\sonrisa nb88\Desktop\1JUM.ico
+    Menu, Tray, Icon, 1JUM.ico
 }
