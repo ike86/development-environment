@@ -5,36 +5,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #Include ..\TrayIcon.ahk
 
+refreshTrayIcon()
+
 ~Escape::Reload
-
-
-
-
-;myReload(){
-;    Reload
-;    trayIcons := TrayIcon_GetInfo()
-;
-;ListVars
-;Pause
-;    if (trayIcons.Length() = 0) {
-;        Menu, Tray, Icon, *
-;        
-;    } else {
-;    
-;        trayIcon := trayIcons.Pop()
-;        if InStr(trayIcon.tooltip, "sonrisa") > 0 {
-;            SetTrayIconToSON()
-;        } else if InStr(trayIcon.tooltip, "apfeff") > 0 {
-;            SetTrayIconToJUM()
-;        } else {
-;            Menu, Tray, Icon, *
-;        }
-;        
-;    }
-;    
-;    
-;}
-
 
 #!s:: ; win+alt+s
 SwitchToSON()
@@ -68,4 +41,29 @@ SwitchToJUM() {
 
 SetTrayIconToJUM() {
     Menu, Tray, Icon, 1JUM.ico
+}
+
+refreshTrayIcon(){
+   trayIcons := TrayIcon_GetInfo()
+   if (trayIcons.Length() = 0) {
+       Menu, Tray, Icon, *
+   } else {
+       trayIcon := findAhkTrayIcon(trayIcons)
+       if InStr(trayIcon.tooltip, "sonrisa") > 0 {
+           SetTrayIconToSON()
+       } else if InStr(trayIcon.tooltip, "apfeff") > 0 {
+           SetTrayIconToJUM()
+       } else {
+           Menu, Tray, Icon, *
+       }   
+   }
+}
+
+findAhkTrayIcon(trayIcons) {
+	for index, trayIcon in trayIcons {
+		if (trayIcon.Class = "OpenVPN-GUI")
+			return trayIcon
+	}
+
+	return 0
 }
