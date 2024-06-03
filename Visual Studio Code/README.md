@@ -1,5 +1,7 @@
 # Visual Studio Code
 
+Settings are synced  
+  
 Extensions:
 - C#
 - Cake
